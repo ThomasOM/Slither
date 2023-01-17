@@ -1,5 +1,5 @@
 # Slither
-A visual demonstration of a quick and efficient A* pathfinding implementation using pygame.
+A visual demonstration of a quick and efficient A* pathfinding implementation rendered with pygame.
 
 # Controls
 - 🖱 Left Click: Place start and target nodes
