@@ -108,5 +108,3 @@ if __name__ == "__main__":
         cut_corners = sys.argv[3] == 'True'  # If the pathfinder should cut corners and make diagonal paths
 
     main(rows, columns, cut_corners)
-
-
