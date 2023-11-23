@@ -1,3 +1,4 @@
+import math
 from queue import PriorityQueue
 
 
@@ -145,7 +146,9 @@ class Node:
         return self.g_cost + self.h_cost
 
     def get_cost_to(self, other):
-        return float(abs(self.coord[0] - other.coord[0])) + float(abs(self.coord[1] - other.coord[1]))
+        dx = float(self.coord[0] - other.coord[0])
+        dy = float(self.coord[1] - other.coord[1])
+        return math.sqrt(dx * dx + dy * dy)
 
     def __lt__(self, other):
         return False  # Need to override this because of use in priority queue
